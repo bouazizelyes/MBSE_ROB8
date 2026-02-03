@@ -1,4 +1,4 @@
-# List of external plug-in models previously loaded. Timestamp: 1770102393024
+# List of external plug-in models previously loaded. Timestamp: 1770109494449
 file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/plugins/bcpg_1.72.2.jar
 file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/plugins/bcprov_1.72.0.jar
 file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/plugins/ca.odell.glazedlists_1.11.0.v20190926-1838.jar
@@ -725,6 +725,15 @@ file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/cap
 file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/plugins/org.polarsys.capella.shared.id.handler_7.0.1.202503211540.jar
 file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/plugins/org.polarsys.capella.th.doc_7.0.1.202503211540.jar
 file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/plugins/org.polarsys.capella.tipsandtricks.doc_7.0.1.202503211540.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.crossphases_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.crossphases.ui_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.doc_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.interphases_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.interphases.ui_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.multiphases_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.multiphases.ui_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.ui_1.7.1.202507241359.jar
 file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/plugins/org.polarsys.capella.transitions.doc_7.0.1.202503211540.jar
 file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/plugins/org.polarsys.capella.ui.doc_7.0.1.202503211540.jar
 file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/plugins/org.polarsys.capella.ui.views_7.0.1.202503211540.jar
@@ -1471,6 +1480,15 @@ file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/cap
 file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/plugins/org.polarsys.capella.shared.id.handler.source_7.0.1.202503211540.jar
 file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/plugins/org.polarsys.capella.th.doc.source_7.0.1.202503211540.jar
 file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/plugins/org.polarsys.capella.tipsandtricks.doc.source_7.0.1.202503211540.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.crossphases.source_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.crossphases.ui.source_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.doc.source_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.interphases.source_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.interphases.ui.source_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.multiphases.source_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.multiphases.ui.source_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.source_1.7.1.202507241359.jar
+file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/dropins/SubsystemTransition/eclipse/plugins/org.polarsys.capella.transition.system2subsystem.ui.source_1.7.1.202507241359.jar
 file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/plugins/org.polarsys.capella.transitions.doc.source_7.0.1.202503211540.jar
 file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/plugins/org.polarsys.capella.ui.doc.source_7.0.1.202503211540.jar
 file:/C:/Users/elyes/Downloads/capella-7.0.1.202503211540-win32-win32-x86_64/capella/plugins/org.polarsys.capella.validation.doc.source_7.0.1.202503211540.jar

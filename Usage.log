@@ -44,3 +44,16 @@
 2026-02-03 08:16:10,884;Capella;7.0.1.202503211540;Create+Representation;System+Architecture+Blank;;e4d34a05-0a5a-4026-a5f1-c99a1a30e32a
 2026-02-03 08:16:10,942;Capella;7.0.1.202503211540;Create+Representation;System+Architecture+Blank;OK;e4d34a05-0a5a-4026-a5f1-c99a1a30e32a
 2026-02-03 08:16:11,212;Capella;7.0.1.202503211540;Create+Representation;System+Architecture+Blank;OK;e4d34a05-0a5a-4026-a5f1-c99a1a30e32a
+2026-02-03 08:40:10,288;Capella;7.0.1.202503211540;Bridge;Transition+System+to+SubSystem;;
+2026-02-03 08:40:12,839;Capella;7.0.1.202503211540;Bridge;Transition+System+to+SubSystem;ERROR;
+2026-02-03 08:46:33,661;Capella;7.0.1.202503211540;Open+Representation;;;
+2026-02-03 08:46:34,423;Capella;7.0.1.202503211540;Open+Representation;;OK;
+2026-02-03 08:46:36,133;Capella;7.0.1.202503211540;Open+Representation;;;
+2026-02-03 08:46:36,484;Capella;7.0.1.202503211540;Open+Representation;;OK;
+2026-02-03 09:02:06,842;Capella;7.0.1.202503211540;Open+Representation;;;
+2026-02-03 09:02:07,277;Capella;7.0.1.202503211540;Open+Representation;;OK;
+2026-02-03 09:02:10,024;Capella;7.0.1.202503211540;Open+Representation;;;
+2026-02-03 09:02:10,437;Capella;7.0.1.202503211540;Open+Representation;;OK;
+2026-02-03 09:21:14,148;Capella;7.0.1.202503211540;Bridge;Transition+System+to+SubSystem;;
+2026-02-03 09:21:41,699;Capella;7.0.1.202503211540;Bridge;Transition+System+to+SubSystem;ERROR;
+2026-02-03 10:01:15,358;Capella;7.0.1.202503211540;Open+Session;chan9a.aird;;
