@@ -1,0 +1,233 @@
+!SESSION 2026-01-26 22:25:17.568 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.14
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-01-26 22:25:43.116
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\elyes'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2026-01-26 22:34:54.324 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.14
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-01-26 22:35:14.030
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\elyes'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2026-01-27 08:25:34.847 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.14
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-01-27 08:25:56.243
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\elyes'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2026-02-01 14:08:21.458 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.14
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-02-01 14:08:57.509
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\elyes'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.sirius.diagram 4 0 2026-02-01 14:42:36.173
+!MESSAGE Error while invoking custom style configuration: org.polarsys.capella.core.sirius.analysis.extension.style.FunctionalExchangeStyleConfiguration
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.sirius.diagram.DDiagram.getOwnedDiagramElements()" because "diagram" is null
+	at org.polarsys.capella.core.sirius.analysis.FunctionalChainServices.getDisplayedFunctionalChains(FunctionalChainServices.java:390)
+	at org.polarsys.capella.core.sirius.analysis.extension.style.FunctionalExchangeStyleConfiguration.getLabelIcon(FunctionalExchangeStyleConfiguration.java:58)
+	at org.eclipse.sirius.diagram.ui.business.internal.query.StyleConfigurationQuery.getLabelIcon(StyleConfigurationQuery.java:78)
+	at org.eclipse.sirius.diagram.ui.tools.api.graphical.edit.styles.SafeStyleConfiguration.getLabelIcon(SafeStyleConfiguration.java:144)
+	at org.eclipse.sirius.diagram.ui.business.internal.query.StyleConfigurationQuery.getLabelIcon(StyleConfigurationQuery.java:78)
+	at org.eclipse.sirius.diagram.ui.edit.internal.part.DiagramElementEditPartOperation.refreshLabelAndIcon(DiagramElementEditPartOperation.java:676)
+	at org.eclipse.sirius.diagram.ui.internal.edit.parts.refresh.LabelAndIconRefresher.refreshLabelAndIcon(LabelAndIconRefresher.java:122)
+	at org.eclipse.sirius.diagram.ui.internal.edit.parts.refresh.LabelAndIconRefresher.notifyChanged(LabelAndIconRefresher.java:74)
+	at org.eclipse.gmf.runtime.diagram.core.listener.DiagramEventBroker.fireNotification(DiagramEventBroker.java:505)
+	at org.eclipse.gmf.runtime.diagram.core.listener.DiagramEventBroker.resourceSetChanged(DiagramEventBroker.java:400)
+	at org.eclipse.gmf.runtime.diagram.ui.DiagramEventBrokerThreadSafe.resourceSetChanged(DiagramEventBrokerThreadSafe.java:74)
+	at org.eclipse.emf.transaction.impl.TransactionalEditingDomainImpl$1.run(TransactionalEditingDomainImpl.java:776)
+	at org.eclipse.emf.transaction.impl.TransactionalEditingDomainImpl.runExclusive(TransactionalEditingDomainImpl.java:323)
+	at org.eclipse.emf.transaction.impl.TransactionalEditingDomainImpl.postcommit(TransactionalEditingDomainImpl.java:766)
+	at org.eclipse.emf.transaction.impl.TransactionalEditingDomainImpl.deactivate(TransactionalEditingDomainImpl.java:538)
+	at org.eclipse.emf.transaction.impl.TransactionImpl.close(TransactionImpl.java:707)
+	at org.eclipse.emf.transaction.impl.TransactionImpl.commit(TransactionImpl.java:469)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.sirius.diagram.ui.tools.internal.commands.WrappingCommandIgnoringAffectedFiles.execute(WrappingCommandIgnoringAffectedFiles.java:125)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:496)
+	at org.eclipse.sirius.diagram.ui.tools.internal.editor.DDiagramCommandStack.execute(DDiagramCommandStack.java:73)
+	at org.eclipse.sirius.diagram.ui.tools.internal.editor.DDiagramCommandStack.execute(DDiagramCommandStack.java:54)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramCommandStack.execute(DiagramCommandStack.java:145)
+	at org.eclipse.gef.ui.actions.WorkbenchPartAction.execute(WorkbenchPartAction.java:79)
+	at org.eclipse.sirius.diagram.ui.tools.internal.actions.delete.DeleteWithHookAction.execute(DeleteWithHookAction.java:75)
+	at org.eclipse.gmf.runtime.diagram.ui.internal.actions.PromptingDeleteAction.run(PromptingDeleteAction.java:174)
+	at org.eclipse.gef.KeyHandler.performStroke(KeyHandler.java:81)
+	at org.eclipse.gef.KeyHandler.keyPressed(KeyHandler.java:54)
+	at org.eclipse.gef.KeyHandler.keyPressed(KeyHandler.java:58)
+	at org.eclipse.gef.ui.parts.GraphicalViewerKeyHandler.keyPressed(GraphicalViewerKeyHandler.java:332)
+	at org.eclipse.gmf.runtime.diagram.ui.internal.parts.DiagramGraphicalViewerKeyHandler.keyPressed(DiagramGraphicalViewerKeyHandler.java:105)
+	at org.eclipse.gef.KeyHandler.keyPressed(KeyHandler.java:58)
+	at org.eclipse.gmf.runtime.diagram.ui.internal.parts.DirectEditKeyHandler.keyPressed(DirectEditKeyHandler.java:90)
+	at org.eclipse.gef.tools.SelectionTool.handleKeyDown(SelectionTool.java:335)
+	at org.eclipse.gef.tools.PanningSelectionTool.handleKeyDown(PanningSelectionTool.java:162)
+	at org.eclipse.gmf.runtime.diagram.ui.services.palette.SelectionToolEx.handleKeyDown(SelectionToolEx.java:113)
+	at org.eclipse.sirius.diagram.ui.tools.internal.palette.SiriusSelectionToolEx.handleKeyDown(SiriusSelectionToolEx.java:100)
+	at org.eclipse.gef.tools.AbstractTool.keyDown(AbstractTool.java:981)
+	at org.eclipse.gef.tools.SelectionTool.keyDown(SelectionTool.java:493)
+	at org.eclipse.gef.EditDomain.keyDown(EditDomain.java:163)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchKeyPressed(DomainEventDispatcher.java:263)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.keyPressed(LightweightSystem.java:514)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:171)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1840)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:5152)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:406)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4775)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.polarsys.capella.core.platform.sirius.ui.app.CapellaApplication.start(CapellaApplication.java:118)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.sirius.diagram 4 0 2026-02-01 14:42:36.178
+!MESSAGE Error while invoking custom style configuration: org.polarsys.capella.core.sirius.analysis.extension.style.FunctionalExchangeStyleConfiguration
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.sirius.diagram.DDiagram.getOwnedDiagramElements()" because "diagram" is null
+	at org.polarsys.capella.core.sirius.analysis.FunctionalChainServices.getDisplayedFunctionalChains(FunctionalChainServices.java:390)
+	at org.polarsys.capella.core.sirius.analysis.extension.style.FunctionalExchangeStyleConfiguration.getLabelIcon(FunctionalExchangeStyleConfiguration.java:58)
+	at org.eclipse.sirius.diagram.ui.business.internal.query.StyleConfigurationQuery.getLabelIcon(StyleConfigurationQuery.java:78)
+	at org.eclipse.sirius.diagram.ui.tools.api.graphical.edit.styles.SafeStyleConfiguration.getLabelIcon(SafeStyleConfiguration.java:144)
+	at org.eclipse.sirius.diagram.ui.business.internal.query.StyleConfigurationQuery.getLabelIcon(StyleConfigurationQuery.java:78)
+	at org.eclipse.sirius.diagram.ui.edit.internal.part.DiagramElementEditPartOperation.refreshLabelAndIcon(DiagramElementEditPartOperation.java:676)
+	at org.eclipse.sirius.diagram.ui.internal.edit.parts.refresh.LabelAndIconRefresher.refreshLabelAndIcon(LabelAndIconRefresher.java:122)
+	at org.eclipse.sirius.diagram.ui.internal.edit.parts.refresh.LabelAndIconRefresher.notifyChanged(LabelAndIconRefresher.java:74)
+	at org.eclipse.gmf.runtime.diagram.core.listener.DiagramEventBroker.fireNotification(DiagramEventBroker.java:505)
+	at org.eclipse.gmf.runtime.diagram.core.listener.DiagramEventBroker.resourceSetChanged(DiagramEventBroker.java:400)
+	at org.eclipse.gmf.runtime.diagram.ui.DiagramEventBrokerThreadSafe.resourceSetChanged(DiagramEventBrokerThreadSafe.java:74)
+	at org.eclipse.emf.transaction.impl.TransactionalEditingDomainImpl$1.run(TransactionalEditingDomainImpl.java:776)
+	at org.eclipse.emf.transaction.impl.TransactionalEditingDomainImpl.runExclusive(TransactionalEditingDomainImpl.java:323)
+	at org.eclipse.emf.transaction.impl.TransactionalEditingDomainImpl.postcommit(TransactionalEditingDomainImpl.java:766)
+	at org.eclipse.emf.transaction.impl.TransactionalEditingDomainImpl.deactivate(TransactionalEditingDomainImpl.java:538)
+	at org.eclipse.emf.transaction.impl.TransactionImpl.close(TransactionImpl.java:707)
+	at org.eclipse.emf.transaction.impl.TransactionImpl.commit(TransactionImpl.java:469)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.sirius.diagram.ui.tools.internal.commands.WrappingCommandIgnoringAffectedFiles.execute(WrappingCommandIgnoringAffectedFiles.java:125)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:496)
+	at org.eclipse.sirius.diagram.ui.tools.internal.editor.DDiagramCommandStack.execute(DDiagramCommandStack.java:73)
+	at org.eclipse.sirius.diagram.ui.tools.internal.editor.DDiagramCommandStack.execute(DDiagramCommandStack.java:54)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramCommandStack.execute(DiagramCommandStack.java:145)
+	at org.eclipse.gef.ui.actions.WorkbenchPartAction.execute(WorkbenchPartAction.java:79)
+	at org.eclipse.sirius.diagram.ui.tools.internal.actions.delete.DeleteWithHookAction.execute(DeleteWithHookAction.java:75)
+	at org.eclipse.gmf.runtime.diagram.ui.internal.actions.PromptingDeleteAction.run(PromptingDeleteAction.java:174)
+	at org.eclipse.gef.KeyHandler.performStroke(KeyHandler.java:81)
+	at org.eclipse.gef.KeyHandler.keyPressed(KeyHandler.java:54)
+	at org.eclipse.gef.KeyHandler.keyPressed(KeyHandler.java:58)
+	at org.eclipse.gef.ui.parts.GraphicalViewerKeyHandler.keyPressed(GraphicalViewerKeyHandler.java:332)
+	at org.eclipse.gmf.runtime.diagram.ui.internal.parts.DiagramGraphicalViewerKeyHandler.keyPressed(DiagramGraphicalViewerKeyHandler.java:105)
+	at org.eclipse.gef.KeyHandler.keyPressed(KeyHandler.java:58)
+	at org.eclipse.gmf.runtime.diagram.ui.internal.parts.DirectEditKeyHandler.keyPressed(DirectEditKeyHandler.java:90)
+	at org.eclipse.gef.tools.SelectionTool.handleKeyDown(SelectionTool.java:335)
+	at org.eclipse.gef.tools.PanningSelectionTool.handleKeyDown(PanningSelectionTool.java:162)
+	at org.eclipse.gmf.runtime.diagram.ui.services.palette.SelectionToolEx.handleKeyDown(SelectionToolEx.java:113)
+	at org.eclipse.sirius.diagram.ui.tools.internal.palette.SiriusSelectionToolEx.handleKeyDown(SiriusSelectionToolEx.java:100)
+	at org.eclipse.gef.tools.AbstractTool.keyDown(AbstractTool.java:981)
+	at org.eclipse.gef.tools.SelectionTool.keyDown(SelectionTool.java:493)
+	at org.eclipse.gef.EditDomain.keyDown(EditDomain.java:163)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchKeyPressed(DomainEventDispatcher.java:263)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.keyPressed(LightweightSystem.java:514)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:171)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1840)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:5152)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:406)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4775)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.polarsys.capella.core.platform.sirius.ui.app.CapellaApplication.start(CapellaApplication.java:118)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2026-02-03 08:05:39.109 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.14
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-02-03 08:06:37.160
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\elyes'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
