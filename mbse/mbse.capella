@@ -38,7 +38,7 @@
   <keyValuePairs xsi:type="org.polarsys.capella.core.data.capellacore:KeyValue" id="c4d5e055-e445-4459-ad75-ce1379f319f9"
       key="projectApproach" value="SingletonComponents"/>
   <ownedModelRoots xsi:type="org.polarsys.capella.core.data.capellamodeller:SystemEngineering"
-      id="0b78306d-dde5-4a7e-871c-b49f52433b62" name="Projet_Robot_ENSTA">
+      id="0b78306d-dde5-4a7e-871c-b49f52433b62" name="mbse">
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.oa:OperationalAnalysis"
         id="2236dc34-4fa2-4794-9b07-ecc4bb0d3172" name="Operational Analysis">
       <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalActivityPkg"
