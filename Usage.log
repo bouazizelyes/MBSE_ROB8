@@ -79,3 +79,11 @@
 2026-02-09 09:13:04,294;Capella;7.0.1.202503211540;Bridge;Transition+System+to+SubSystem;ERROR;
 2026-02-09 09:13:12,316;Capella;7.0.1.202503211540;Bridge;Transition+System+to+SubSystem;;
 2026-02-09 09:19:56,923;Capella;7.0.1.202503211540;Bridge;Transition+System+to+SubSystem;OK;
+2026-02-09 09:23:46,414;Capella;7.0.1.202503211540;Open+Session;SousSysteme_Perception.aird;;
+2026-02-09 09:23:47,922;Capella;7.0.1.202503211540;Open+Session;SousSysteme_Perception.aird;OK;
+2026-02-09 09:24:02,491;Capella;7.0.1.202503211540;Open+Representation;;;
+2026-02-09 09:24:03,135;Capella;7.0.1.202503211540;Open+Representation;;OK;
+2026-02-09 09:59:51,848;Capella;7.0.1.202503211540;Transition;Actor+Transition;;
+2026-02-09 09:59:59,180;Capella;7.0.1.202503211540;Transition;Actor+Transition;OK;
+2026-02-09 10:05:09,564;Capella;7.0.1.202503211540;Bridge;Transition+System+to+SubSystem;;
+2026-02-09 10:05:17,464;Capella;7.0.1.202503211540;Bridge;Transition+System+to+SubSystem;OK;
