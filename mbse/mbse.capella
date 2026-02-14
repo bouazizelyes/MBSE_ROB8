@@ -46,60 +46,74 @@
         <ownedOperationalActivities xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
             id="4d00a534-395b-4030-816b-c9535f2f1925" name="Root Operational Activity">
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="7602da5b-45ef-4391-bf31-7ff97b940fa6" name="Demander une inspection"/>
+              id="7602da5b-45ef-4391-bf31-7ff97b940fa6" name="Demander une inspection"
+              summary="Activité consistant à formuler une demande d’inspection d’une zone du campus en réponse à un besoin de sécurité ou à un événement particulier."/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="41a03999-9694-443a-bf05-7dacaf0c667a" name="Définir la stratégie de surveillance"/>
+              id="41a03999-9694-443a-bf05-7dacaf0c667a" name="Définir la stratégie de surveillance"
+              summary="Activité permettant d’établir les priorités et les modalités des opérations de surveillance."/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="fb358bf8-53ce-4061-83de-71eae0c1a2ca" name="Circuler sur le campus"/>
+              id="fb358bf8-53ce-4061-83de-71eae0c1a2ca" name="Circuler sur le campus"
+              summary="Activité décrivant les déplacements des étudiants et du personnel dans l’environnement surveillé."/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="ce7a2672-ad44-4724-ab16-7bd32bb45d41" name="Lancer l'inspection"/>
+              id="ce7a2672-ad44-4724-ab16-7bd32bb45d41" name="Lancer l'inspection"
+              summary="Activité visant à déclencher une mission d’inspection conformément à une demande ou une planification établie."/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="2c9879bf-1d06-4c8c-bec4-fa761952e205" name="Superviser le flux vidéo"/>
+              id="2c9879bf-1d06-4c8c-bec4-fa761952e205" name="Superviser le flux vidéo"
+              summary="Activité consistant à observer et analyser les flux vidéo afin d’assurer le suivi des opérations d’inspection."/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="504d7fc4-e34a-44bd-9f8a-13b94b220b70" name="Apparaître dans la zone"/>
+              id="504d7fc4-e34a-44bd-9f8a-13b94b220b70" name="Apparaître dans la zone"
+              summary="Activité décrivant la présence d’un intrus ou d’un objet dans la zone surveillée."/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="2f40eaa6-71e1-4f9b-8f03-3e2ce3ffe4b8" name="Imposer les conditions climatiques"/>
+              id="2f40eaa6-71e1-4f9b-8f03-3e2ce3ffe4b8" name="Imposer les conditions climatiques"
+              summary="Activité représentant l’influence des conditions météorologiques sur les opérations de surveillance."/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="abaef209-5ec2-4ac5-b74c-96a6a9f00b6f" name="Bloquer le passage"/>
+              id="abaef209-5ec2-4ac5-b74c-96a6a9f00b6f" name="Bloquer le passage"
+              summary="Activité correspondant à la présence d’un obstacle empêchant ou limitant la circulation."/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="ce43152c-66d4-497c-836a-7ef01c7e3201" name="Demande de ronde" target="#41a03999-9694-443a-bf05-7dacaf0c667a"
-              source="#7602da5b-45ef-4391-bf31-7ff97b940fa6"/>
+              id="ce43152c-66d4-497c-836a-7ef01c7e3201" name="Demande de ronde" summary="Requête formelle adressée au système de surveillance afin de déclencher une mission d’inspection."
+              target="#41a03999-9694-443a-bf05-7dacaf0c667a" source="#7602da5b-45ef-4391-bf31-7ff97b940fa6"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="3ba0b295-b34b-4e35-994f-3d1b081e514e" name=" Paramètres de mission"
+              summary="Ensemble des informations définissant les objectifs, contraintes et modalités d’exécution d’une mission d’inspection."
               target="#ce7a2672-ad44-4724-ab16-7bd32bb45d41" source="#41a03999-9694-443a-bf05-7dacaf0c667a"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="2272c15a-b5c1-4752-a774-6a165f8b2240" name="Flux et Télémétrie"
+              summary="Transmission continue des données vidéo et de télémétrie nécessaires au suivi en temps réel des activités de surveillance."
               target="#2c9879bf-1d06-4c8c-bec4-fa761952e205" source="#ce7a2672-ad44-4724-ab16-7bd32bb45d41"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="367b5fa1-1169-4c79-8f54-70a68eddf419" name="Contrainte Météo" target="#41a03999-9694-443a-bf05-7dacaf0c667a"
-              source="#2f40eaa6-71e1-4f9b-8f03-3e2ce3ffe4b8"/>
+              id="367b5fa1-1169-4c79-8f54-70a68eddf419" name="Contrainte Météo" summary="Information relative aux conditions météorologiques pouvant influencer le déroulement ou la planification des inspections."
+              target="#41a03999-9694-443a-bf05-7dacaf0c667a" source="#2f40eaa6-71e1-4f9b-8f03-3e2ce3ffe4b8"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="09c0a796-b044-465c-bb22-66d62859230f" name=" Contrainte de sécurité"
               target="#41a03999-9694-443a-bf05-7dacaf0c667a" source="#fb358bf8-53ce-4061-83de-71eae0c1a2ca"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="c294d73f-eb7a-42d2-911f-c8fdd6b992bf" name="Détection visuelle"
+              summary="Flux d’information visuelle transmis par les entités surveillées vers le bureau de sécurité afin de permettre l’identification d’intrusions ou d’événements anormaux."
               target="#2c9879bf-1d06-4c8c-bec4-fa761952e205" source="#504d7fc4-e34a-44bd-9f8a-13b94b220b70"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="154dbd7f-4eb8-42a2-9fcb-331a84be789f" name="Alerte obstacle" target="#2c9879bf-1d06-4c8c-bec4-fa761952e205"
-              source="#abaef209-5ec2-4ac5-b74c-96a6a9f00b6f"/>
+              id="154dbd7f-4eb8-42a2-9fcb-331a84be789f" name="Alerte obstacle" summary="Signal d’alerte envoyé au bureau de sécurité lorsqu’un obstacle est détecté et susceptible d’entraver la mission d’inspection."
+              target="#2c9879bf-1d06-4c8c-bec4-fa761952e205" source="#abaef209-5ec2-4ac5-b74c-96a6a9f00b6f"/>
         </ownedOperationalActivities>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
           id="6b012d02-4e8c-4dda-986e-2820c7567596" name="Operational Capabilities">
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
-            id="2331396f-fd13-4a12-a7e4-126cb10639bc" name="Visualiser les inspections en temps réel">
+            id="2331396f-fd13-4a12-a7e4-126cb10639bc" name="Visualiser les inspections en temps réel"
+            summary="Capacité opérationnelle consistant à fournir une visualisation en temps réel des activités d’inspection afin d’assurer le suivi et la réactivité.">
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="88656f8c-387b-42fc-8ad4-40c8d0019e90" involved="#03dee2ad-9fb1-4d83-b7d8-aea4b87e5cf2"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="75ebb2f9-9d65-4e47-97c6-f5edced352aa" involved="#1ad6432c-c308-4c9a-a3ec-61f2874c9c73"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
-            id="1c8ec940-4709-4ecd-b1cd-660ff1ed4374" name="Planifier les rondes de surveillance">
+            id="1c8ec940-4709-4ecd-b1cd-660ff1ed4374" name="Planifier les rondes de surveillance"
+            summary="Capacité opérationnelle visant à définir les itinéraires, les fréquences et les priorités des rondes de surveillance.">
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="a4614107-223e-4d9c-ad3f-c83f8e8e71fe" involved="#1ad6432c-c308-4c9a-a3ec-61f2874c9c73"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
-            id="ab86e113-f36d-4a6f-b660-32ce3d1c0fcb" name="Inspecter les zones du campus">
+            id="ab86e113-f36d-4a6f-b660-32ce3d1c0fcb" name="Inspecter les zones du campus"
+            summary="Capacité opérationnelle consistant à contrôler et analyser l’état des zones surveillées du campus.">
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="a99e08c3-e0a7-40e4-bf5d-5f3d5262a960" involved="#26c7e402-575c-4ee8-a7d6-c6b868670614"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
@@ -127,7 +141,7 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="a273a8dc-f269-4bc0-beb7-a26c6d6e53d8"
             name="Météo" abstractType="#7479000a-b3e6-4dcb-977e-1aa2628c3acb"/>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="c8e1fd98-eded-4e7e-a168-8b734e16c257"
-            name="IPP">
+            name="IPP" summary="Operational perimeter of the ENSTA campus where inspection and surveillance activities are performed.">
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="dee4cf01-1cc9-48ca-a1a3-c27e04dde54c"
               name="ENSTA" abstractType="#16fc1c6d-a298-4517-9251-d01850906aac"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="dce8a3f8-5d59-4d37-a5a3-bbca8ca6a4aa"
@@ -137,19 +151,21 @@
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="12fc21f4-9cd7-4363-8fe6-bf617a768e1e"
               name="Obstacle" abstractType="#914e6d6d-f387-44c5-a321-b23b3318e660"/>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="16fc1c6d-a298-4517-9251-d01850906aac"
-              name="ENSTA">
+              name="ENSTA" summary="Main operational organization responsible for coordinating and executing campus inspection and surveillance activities.">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="46995a99-4e95-43c8-b486-8efc524d5dbe"
                 name="Direction ENSTA" abstractType="#03dee2ad-9fb1-4d83-b7d8-aea4b87e5cf2"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="68c530bb-c98b-4379-8e2f-bbdf77a183a5"
                 name="Bureau de sécurité" abstractType="#1ad6432c-c308-4c9a-a3ec-61f2874c9c73"/>
             <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="03dee2ad-9fb1-4d83-b7d8-aea4b87e5cf2"
-                name="Direction ENSTA" actor="true" human="true">
+                name="Direction ENSTA" summary="Management authority responsible for requesting inspections and defining security policies."
+                actor="true" human="true">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="5c41078d-a1dd-4613-bc3a-1639d067c3f2" targetElement="#7602da5b-45ef-4391-bf31-7ff97b940fa6"
                   sourceElement="#03dee2ad-9fb1-4d83-b7d8-aea4b87e5cf2"/>
             </ownedEntities>
             <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="1ad6432c-c308-4c9a-a3ec-61f2874c9c73"
-                name="Bureau de sécurité" actor="true" human="true">
+                name="Bureau de sécurité" summary="Security office responsible for monitoring video streams, analyzing alerts, and initiating inspection missions."
+                actor="true" human="true">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="8fadb4fa-8799-4f24-8a13-b2e35a84e16d" targetElement="#41a03999-9694-443a-bf05-7dacaf0c667a"
                   sourceElement="#1ad6432c-c308-4c9a-a3ec-61f2874c9c73"/>
@@ -162,26 +178,30 @@
             </ownedEntities>
           </ownedEntities>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="26c7e402-575c-4ee8-a7d6-c6b868670614"
-              name="étudiants et personnels" actor="true" human="true">
+              name="étudiants et personnels" summary="Campus occupants circulating within the operational perimeter and potentially interacting with inspection activities."
+              actor="true" human="true">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="ece4c959-9666-44f0-9e8a-73d53a855223" targetElement="#fb358bf8-53ce-4061-83de-71eae0c1a2ca"
                 sourceElement="#26c7e402-575c-4ee8-a7d6-c6b868670614"/>
           </ownedEntities>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="a374d20b-9c47-4c64-95e2-aa58388a0a75"
-              name="Intrus ou Objets" actor="true" human="true">
+              name="Intrus ou Objets" summary="External entities that may appear in monitored areas and require detection or inspection."
+              actor="true" human="true">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="6dc50832-2ad5-4930-8c57-3ed7b879fca5" targetElement="#504d7fc4-e34a-44bd-9f8a-13b94b220b70"
                 sourceElement="#a374d20b-9c47-4c64-95e2-aa58388a0a75"/>
           </ownedEntities>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="914e6d6d-f387-44c5-a321-b23b3318e660"
-              name="Obstacle" actor="true" human="true">
+              name="Obstacle" summary="Physical obstruction that may block access or affect inspection routes."
+              actor="true" human="true">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="8cc2d149-a745-400c-b0be-dc6b198d8773" targetElement="#abaef209-5ec2-4ac5-b74c-96a6a9f00b6f"
                 sourceElement="#914e6d6d-f387-44c5-a321-b23b3318e660"/>
           </ownedEntities>
         </ownedEntities>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="7479000a-b3e6-4dcb-977e-1aa2628c3acb"
-            name="Météo" actor="true" human="true">
+            name="Météo" summary="External environmental entity imposing weather conditions that may impact inspection operations."
+            actor="true" human="true">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="34533924-f9dc-4682-9872-70f26b180450" targetElement="#2f40eaa6-71e1-4f9b-8f03-3e2ce3ffe4b8"
               sourceElement="#7479000a-b3e6-4dcb-977e-1aa2628c3acb"/>
@@ -260,7 +280,8 @@
                 id="bada310e-040e-4a16-918a-ffb32e2aa7cc" involved="#ca8a087b-b269-4b48-9bc4-5f4dfe56ef25"/>
           </ownedFunctionalChains>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="92e83b50-cdc1-4847-9edc-2e7e35a61353" name="Demander une inspection">
+              id="92e83b50-cdc1-4847-9edc-2e7e35a61353" name="Demander une inspection"
+              summary="Fonction système permettant de recevoir et traiter une demande d’inspection émise par l’autorité compétente.">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="c1e7296c-d2b3-4550-9f69-8834fa93e6be" name="outDemande de ronde"/>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
@@ -268,7 +289,8 @@
                 sourceElement="#92e83b50-cdc1-4847-9edc-2e7e35a61353"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="dcc039ef-4e1e-4030-9d17-45e7f79e08ad" name="Configurer la mission du robot">
+              id="dcc039ef-4e1e-4030-9d17-45e7f79e08ad" name="Configurer la mission du robot"
+              summary="Fonction système permettant de définir et transmettre les paramètres nécessaires à l’exécution d’une mission d’inspection.">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="3d05d850-8abb-49c1-8606-d2e8f6f895e9" name="inDemande de ronde"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -282,7 +304,8 @@
                 sourceElement="#dcc039ef-4e1e-4030-9d17-45e7f79e08ad"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="fdd646d7-ed85-4599-bba4-ab8dc0d82016" name="Circuler sur le campus">
+              id="fdd646d7-ed85-4599-bba4-ab8dc0d82016" name="Circuler sur le campus"
+              summary="Fonction système assurant le déplacement du drone au sein de la zone du campus afin d’exécuter la mission d’inspection.">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="61afc17b-f2e0-4ffa-ab7f-fd55a94b93d6" name="out Contrainte de sécurité"/>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
@@ -290,7 +313,8 @@
                 sourceElement="#fdd646d7-ed85-4599-bba4-ab8dc0d82016"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="54553753-9125-4fff-b8df-f5d1f1f34fe0" name="Lancer l'inspection">
+              id="54553753-9125-4fff-b8df-f5d1f1f34fe0" name="Lancer l'inspection"
+              summary="Fonction système déclenchant l’exécution opérationnelle de la mission d’inspection.">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="b93270da-bc9d-457b-8844-7c19fea7729f" name="outFlux et Télémétrie"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
@@ -300,7 +324,8 @@
                 sourceElement="#54553753-9125-4fff-b8df-f5d1f1f34fe0"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="f93107d7-caee-4a35-9619-20a76aec3fad" name="Superviser le flux vidéo">
+              id="f93107d7-caee-4a35-9619-20a76aec3fad" name="Superviser le flux vidéo"
+              summary="Fonction système assurant la réception et l’analyse des flux vidéo afin de permettre le suivi en temps réel des opérations.">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="d7589c22-64ab-4b9b-adbf-1602e8402d8d" name="inFlux et Télémétrie"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -312,7 +337,8 @@
                 sourceElement="#f93107d7-caee-4a35-9619-20a76aec3fad"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="7e827a30-edd4-407b-84a5-4648fc0dcf3c" name="Apparaître dans la zone">
+              id="7e827a30-edd4-407b-84a5-4648fc0dcf3c" name="Apparaître dans la zone"
+              summary="Fonction système détectant la présence d’un élément externe dans la zone surveillée.">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="f691cd5d-6d3b-4db8-b262-40a5772db512" name="outDétection visuelle"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
@@ -322,7 +348,8 @@
                 sourceElement="#7e827a30-edd4-407b-84a5-4648fc0dcf3c"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="61079696-e83c-4f8c-bcf1-3d22c4d8270d" name="Imposer les conditions climatiques">
+              id="61079696-e83c-4f8c-bcf1-3d22c4d8270d" name="Imposer les conditions climatiques"
+              summary="Fonction système prenant en compte les conditions météorologiques afin d’adapter le comportement et la planification de la mission.">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="21a4a1ac-a543-4a6b-9932-fcae9ff2cff9" name="FOP 2"/>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
@@ -330,7 +357,8 @@
                 sourceElement="#61079696-e83c-4f8c-bcf1-3d22c4d8270d"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="bcf0a612-f5db-4416-93b3-966a7472a6a2" name="Bloquer le passage">
+              id="bcf0a612-f5db-4416-93b3-966a7472a6a2" name="Bloquer le passage"
+              summary="Fonction système identifiant et gérant la présence d’un obstacle susceptible d’entraver le déplacement.">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="7c8fa6ba-cdc6-4081-b1ee-97a1dabd24b9" name="outAlerte obstacle"/>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
@@ -338,14 +366,15 @@
                 sourceElement="#bcf0a612-f5db-4416-93b3-966a7472a6a2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="ca8a087b-b269-4b48-9bc4-5f4dfe56ef25" name="Piloter Moteurs">
+              id="ca8a087b-b269-4b48-9bc4-5f4dfe56ef25" name="Piloter Moteurs" summary="Fonction système commandant les actionneurs afin d’assurer le déplacement et la stabilité du drone.">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="2ee1665b-039b-4eba-adb1-c3ed77ddbe46" name="FIP 2"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="b3c0248f-441c-4c56-8e45-3603ed848b8c" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="76ee1d7a-4eeb-4518-bd30-055452b1c123" name="Détecter obstacles">
+              id="76ee1d7a-4eeb-4518-bd30-055452b1c123" name="Détecter obstacles"
+              summary="Fonction système identifiant la présence d’obstacles afin d’adapter la trajectoire ou de générer une alerte.">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="dd85f7a8-9fc8-44a7-8a25-6f64da22ce6e" name="inAlerte obstacle"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -356,14 +385,15 @@
                 id="b977435c-815a-4531-8f68-687b799fef88" name="FOP 2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="c8713d1f-ae2d-40e9-a86b-0c44d977ff5e" name="Transmettre données">
+              id="c8713d1f-ae2d-40e9-a86b-0c44d977ff5e" name="Transmettre données"
+              summary="Fonction système assurant l’envoi des informations collectées vers le centre de supervision.">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="d0b716c5-1519-491f-9827-71a3e4dcdfe0" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="61657131-438d-445b-a6be-2b2747426dd2" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="80fa8bc9-cac9-4c9e-bd05-b93fbca9b29c" name="Gérer la mission">
+              id="80fa8bc9-cac9-4c9e-bd05-b93fbca9b29c" name="Gérer la mission" summary="Fonction système coordonnant l’ensemble des actions nécessaires à l’exécution cohérente de la mission d’inspection.">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="1d7f80e0-bccb-4eb4-9667-c8e5ea383c4a" name="in Paramètres de mission"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -378,7 +408,7 @@
                 id="b6cb8a6a-9332-402d-9f54-91b84b848a1a" name="FOP 2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="565d1df1-dd70-4a84-b7fa-088e6311210e" name="Capturer vidéo">
+              id="565d1df1-dd70-4a84-b7fa-088e6311210e" name="Capturer vidéo" summary="Fonction système permettant l’acquisition d’images de la zone inspectée.">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="64b7274c-e530-4fcf-8c82-8dc8ce17d63e" name="inDétection visuelle"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -387,19 +417,21 @@
                 id="275984b7-ede5-4252-a3b0-8bd74b1b5388" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="025c90d6-1e4a-4edc-961d-ca8b78a76188" name="Gérer l'énergie">
+              id="025c90d6-1e4a-4edc-961d-ca8b78a76188" name="Gérer l'énergie" summary="Fonction système assurant le contrôle et l’optimisation de la consommation énergétique du drone.">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="3e1b2a7a-de0b-4d57-878e-4d74b1c3e88d" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="2e17ba66-4839-4985-a601-320fab20ffa3" name="Surveiller conditions environnementales">
+              id="2e17ba66-4839-4985-a601-320fab20ffa3" name="Surveiller conditions environnementales"
+              summary="Fonction système analysant les données liées aux conditions extérieures pouvant impacter la mission.">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="5eec5850-7a15-4b10-be27-b3d6624e429c" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="0cdb2259-dd2f-4ebf-a4b4-4ac037753e57" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="25f48f20-a534-42f9-aa0e-503d4e6b08a4" name="Calculer Trajectoire">
+              id="25f48f20-a534-42f9-aa0e-503d4e6b08a4" name="Calculer Trajectoire"
+              summary="Fonction système déterminant la trajectoire optimale du drone en fonction des objectifs et des contraintes détectées.">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="33d3df90-0631-46ed-ae58-311313cfedc7" name="FIP 2"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -410,7 +442,7 @@
                 id="649916a2-6c97-4632-8f07-4c9a1a1456f7" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="8e895d57-3650-477f-9b81-6fb41ce73da6" name="Se Localiser">
+              id="8e895d57-3650-477f-9b81-6fb41ce73da6" name="Se Localiser" summary="Fonction système permettant de déterminer la position courante du drone dans l’environnement surveillé.">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="2794e354-507d-4ea2-ac14-dc5686b61174" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
@@ -422,14 +454,15 @@
               id="3d3505fc-47b2-4f55-9227-ad3938f8a67b" targetElement="#4d00a534-395b-4030-816b-c9535f2f1925"
               sourceElement="#0c23f8f2-268c-41e5-970f-c763c1e676b5"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="d782048a-b059-457b-a1f5-dbe995f812d3" name="Demande de ronde" target="#3d05d850-8abb-49c1-8606-d2e8f6f895e9"
-              source="#c1e7296c-d2b3-4550-9f69-8834fa93e6be">
+              id="d782048a-b059-457b-a1f5-dbe995f812d3" name="Demande de ronde" summary="Transmission d’une requête formelle de mission d’inspection depuis l’autorité décisionnelle vers le centre de supervision."
+              target="#3d05d850-8abb-49c1-8606-d2e8f6f895e9" source="#c1e7296c-d2b3-4550-9f69-8834fa93e6be">
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                 id="53c105e7-00b4-46a7-ad5e-a3c363b95510" targetElement="#ce43152c-66d4-497c-836a-7ef01c7e3201"
                 sourceElement="#d782048a-b059-457b-a1f5-dbe995f812d3"/>
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="490aa93e-ef33-4b83-ac3c-7e0f6ebd59a1" name=" Paramètres de mission"
+              summary="Flux de commande contenant les informations nécessaires à l’initialisation et au paramétrage de la mission du drone."
               target="#1d7f80e0-bccb-4eb4-9667-c8e5ea383c4a" source="#e4576b8e-0a19-4011-8f75-2c03cc93208c">
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                 id="b0803a91-4d16-4245-9757-44412055cd8f" targetElement="#3ba0b295-b34b-4e35-994f-3d1b081e514e"
@@ -465,37 +498,42 @@
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="6d8b4b2c-a5d5-4525-9713-166b056082e3" name="Consigne de déplacement"
+              summary="Instruction interne définissant la direction et la vitesse de déplacement du drone."
               target="#33d3df90-0631-46ed-ae58-311313cfedc7" source="#8e248c74-a412-4b3a-829c-2acc15c27bec"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="ebe3e486-d07b-4ea3-8440-90ee0469e45e" name="Position Objet/Obstacle"
+              summary="Donnée relative à la position d’un objet ou d’un obstacle utilisée pour adapter la trajectoire du drone."
               target="#63b05d4b-b206-4ab8-b1de-e19dbc2cd108" source="#a561f84e-f331-4f21-aba2-bd346341a0b2"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="e0b010b9-e1c2-436f-9657-b6427d7e75b1" name=" Flux vidéo brut" target="#d0b716c5-1519-491f-9827-71a3e4dcdfe0"
               source="#275984b7-ede5-4252-a3b0-8bd74b1b5388"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="c9f18401-67dd-4c6e-95c2-d8c9899d36f4" name="Retour vidéo temps réel"
+              summary="Flux continu d’images permettant la surveillance visuelle immédiate de la zone inspectée."
               target="#5b692ece-6db5-4ba7-a944-fd2ec37dc58f" source="#61657131-438d-445b-a6be-2b2747426dd2"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="df059b1b-f4e5-4525-a8dc-cc8bbe81a161" name=" Paramètres de mission"
+              summary="Envoi des informations de configuration de la mission (objectifs, zone, contraintes) du centre de supervision vers le drone."
               target="#5cb6fbc4-589d-462c-8a94-0434784523b3" source="#244843b2-da12-4566-8e1d-3cb5eac77a25"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="6e19d725-f02c-4d34-a03f-578b8a9ebe49" name="Niveau Batterie" target="#581273ae-3284-42ce-875a-5d7e74de70af"
-              source="#3e1b2a7a-de0b-4d57-878e-4d74b1c3e88d"/>
+              id="6e19d725-f02c-4d34-a03f-578b8a9ebe49" name="Niveau Batterie" summary="Information relative à l’état de charge énergétique du drone pour assurer la continuité de la mission."
+              target="#581273ae-3284-42ce-875a-5d7e74de70af" source="#3e1b2a7a-de0b-4d57-878e-4d74b1c3e88d"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="809227f8-e63b-4f51-b3af-3404ee437402" name="Données physiques" target="#5eec5850-7a15-4b10-be27-b3d6624e429c"
-              source="#21a4a1ac-a543-4a6b-9932-fcae9ff2cff9"/>
+              id="809227f8-e63b-4f51-b3af-3404ee437402" name="Données physiques" summary="Informations environnementales transmises au système afin d’adapter le comportement du drone aux conditions climatiques."
+              target="#5eec5850-7a15-4b10-be27-b3d6624e429c" source="#21a4a1ac-a543-4a6b-9932-fcae9ff2cff9"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="a9f8d83c-3916-48b5-89d4-0013fd63d78f" name="Autorisation Vol" target="#46139385-3c00-4594-ac57-d4dbcea6ec70"
-              source="#0cdb2259-dd2f-4ebf-a4b4-4ac037753e57"/>
+              id="a9f8d83c-3916-48b5-89d4-0013fd63d78f" name="Autorisation Vol" summary="Validation transmise au drone autorisant l’exécution de la mission de déplacement aérien."
+              target="#46139385-3c00-4594-ac57-d4dbcea6ec70" source="#0cdb2259-dd2f-4ebf-a4b4-4ac037753e57"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="5d2ff823-54a6-441f-ab03-8eec2e62f924" name="Commandes Moteurs" target="#2ee1665b-039b-4eba-adb1-c3ed77ddbe46"
-              source="#649916a2-6c97-4632-8f07-4c9a1a1456f7"/>
+              id="5d2ff823-54a6-441f-ab03-8eec2e62f924" name="Commandes Moteurs" summary="Signal de commande transmis aux moteurs pour assurer le contrôle du mouvement du drone."
+              target="#2ee1665b-039b-4eba-adb1-c3ed77ddbe46" source="#649916a2-6c97-4632-8f07-4c9a1a1456f7"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="d723b37a-e85b-48d0-83c1-24c14db7c889" name="Ordre d'enregistrement"
+              summary="Commande envoyée au drone pour déclencher ou arrêter l’enregistrement des données vidéo."
               target="#96bb126f-05bf-4862-ac4b-197c93f41e7c" source="#b6cb8a6a-9332-402d-9f54-91b84b848a1a"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="3560d56b-e6be-46c1-8e81-126710c2f9d1" name="Statut Drone" target="#d991b482-bd78-44fc-aa6f-c8895e23984f"
-              source="#e77cae6e-7ceb-4e2c-bd13-c225aa3ddf90"/>
+              id="3560d56b-e6be-46c1-8e81-126710c2f9d1" name="Statut Drone" summary="Information remontée par le drone indiquant son état opérationnel (position, niveau de batterie, état des systèmes) au centre de supervision."
+              target="#d991b482-bd78-44fc-aa6f-c8895e23984f" source="#e77cae6e-7ceb-4e2c-bd13-c225aa3ddf90"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="64a0da48-78c9-44ab-8d51-5daf90406214" name="odométrie" target="#2794e354-507d-4ea2-ac14-dc5686b61174"
               source="#b3c0248f-441c-4c56-8e45-3603ed848b8c"/>
@@ -503,11 +541,11 @@
               id="e7aadfd4-ed0d-4f5d-8f55-64a0defcf96c" name="Position courante" target="#4cfb804b-d90f-4383-a002-d9ed1886ca64"
               source="#d72aedcc-fbf4-48bf-880b-890e73222025"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="6afb689b-76b5-4685-9ffc-617bc39099ed" name="Présence physique" target="#74edd3e8-5d41-4e03-a7e6-1eea63598e70"
-              source="#f3da41ad-5824-4b49-94ac-1f8e71d4c0c2"/>
+              id="6afb689b-76b5-4685-9ffc-617bc39099ed" name="Présence physique" summary="Signal ou donnée indiquant la présence d’un élément externe dans la zone d’inspection."
+              target="#74edd3e8-5d41-4e03-a7e6-1eea63598e70" source="#f3da41ad-5824-4b49-94ac-1f8e71d4c0c2"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="864f5cc3-75ab-4120-8b26-9ba6eab3ad62" name="Alerte obstacle" target="#bfdc14ef-2f49-41a6-b623-503c952176ef"
-              source="#b977435c-815a-4531-8f68-687b799fef88"/>
+              id="864f5cc3-75ab-4120-8b26-9ba6eab3ad62" name="Alerte obstacle" summary="Notification envoyée au centre de supervision lorsqu’un obstacle critique est détecté."
+              target="#bfdc14ef-2f49-41a6-b623-503c952176ef" source="#b977435c-815a-4531-8f68-687b799fef88"/>
         </ownedSystemFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.ctx:CapabilityPkg"
@@ -818,13 +856,13 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="1a12ccaa-3a9a-4e25-a1c6-30d6f8877c9d"
             name="Intrus ou Objets" abstractType="#6abcf0ff-2110-420e-9e64-b213467e8858"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="68d2b5b5-25ae-4f16-a9bb-f8ea6e088531"
-            name="étudiants et personnels" abstractType="#590f9592-450a-40ca-9d5b-70f0e892c769"/>
+            name="Etudiants et personnels" abstractType="#590f9592-450a-40ca-9d5b-70f0e892c769"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="51b8479a-2234-4947-8a0f-f70aa354621f"
             name="Météo" abstractType="#1a259ec3-b9b8-46aa-a2e3-801029a7678f"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="668069f0-9924-4e85-8692-4f0f51697a25"
-            name="Obstacle." abstractType="#58aba4cd-3811-49b5-9358-9efa4715578e"/>
+            name="Obstacle" abstractType="#58aba4cd-3811-49b5-9358-9efa4715578e"/>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="d4fd0b22-0986-4c5a-8fa5-56e79d9314bb" name="Drone">
+            id="d4fd0b22-0986-4c5a-8fa5-56e79d9314bb" name="Drone" summary="Système autonome mobile chargé d’exécuter les missions d’inspection, de collecter les données environnementales et de transmettre les informations au centre de supervision.">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="fd060dbe-7749-4b51-b783-258e1ddf2167" targetElement="#ca8a087b-b269-4b48-9bc4-5f4dfe56ef25"
               sourceElement="#d4fd0b22-0986-4c5a-8fa5-56e79d9314bb"/>
@@ -960,7 +998,8 @@
           </ownedStateMachines>
         </ownedSystemComponents>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="1cbc42e6-d63a-4560-9206-306f8524a0f0" name="Direction ENSTA" actor="true">
+            id="1cbc42e6-d63a-4560-9206-306f8524a0f0" name="Direction ENSTA" summary="Autorité décisionnelle chargée de formuler les demandes d’inspection et de définir les objectifs opérationnels."
+            actor="true">
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="8c521372-232a-4924-b735-579efc9b4ee4" targetElement="#5c41078d-a1dd-4613-bc3a-1639d067c3f2"
               sourceElement="#52c48df3-2d14-404d-a8f6-b16e6c3f6e9f"/>
@@ -972,7 +1011,8 @@
               sourceElement="#1cbc42e6-d63a-4560-9206-306f8524a0f0"/>
         </ownedSystemComponents>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="6da49acb-5b5c-4a6b-a886-68e2cdd41f65" name="Bureau de sécurité" actor="true">
+            id="6da49acb-5b5c-4a6b-a886-68e2cdd41f65" name="Bureau de sécurité" summary="Entité organisationnelle responsable de la supervision des opérations du système, de la configuration des missions et du suivi des flux d’information en temps réel."
+            actor="true">
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="f4fecbd1-db9e-4fca-a249-d932dd5ab080" targetElement="#8fadb4fa-8799-4f24-8a13-b2e35a84e16d"
               sourceElement="#0cdaec9e-e838-4b76-b1b0-49a995f6d8ed"/>
@@ -996,7 +1036,8 @@
               sourceElement="#6da49acb-5b5c-4a6b-a886-68e2cdd41f65"/>
         </ownedSystemComponents>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="590f9592-450a-40ca-9d5b-70f0e892c769" name="étudiants et personnels"
+            id="590f9592-450a-40ca-9d5b-70f0e892c769" name="Etudiants et personnels"
+            summary="Occupants du campus évoluant dans la zone surveillée et pouvant interagir indirectement avec le système d’inspection."
             actor="true">
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="31c8caf0-9a57-464f-b050-e9f284a5af7c" targetElement="#ece4c959-9666-44f0-9e8a-73d53a855223"
@@ -1009,7 +1050,8 @@
               sourceElement="#590f9592-450a-40ca-9d5b-70f0e892c769"/>
         </ownedSystemComponents>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="6abcf0ff-2110-420e-9e64-b213467e8858" name="Intrus ou Objets" actor="true">
+            id="6abcf0ff-2110-420e-9e64-b213467e8858" name="Intrus ou Objets" summary="Entités externes pouvant apparaître dans la zone surveillée et nécessitant une détection ou une analyse par le système."
+            actor="true">
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="66dbf21f-990d-48d8-8620-9230170a7433" targetElement="#6dc50832-2ad5-4930-8c57-3ed7b879fca5"
               sourceElement="#4a1378eb-9274-454f-9795-bfab4e65888e"/>
@@ -1021,7 +1063,8 @@
               sourceElement="#6abcf0ff-2110-420e-9e64-b213467e8858"/>
         </ownedSystemComponents>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="1a259ec3-b9b8-46aa-a2e3-801029a7678f" name="Météo" actor="true">
+            id="1a259ec3-b9b8-46aa-a2e3-801029a7678f" name="Météo" summary="Environnement externe imposant des conditions climatiques influençant les performances et la planification des missions du drone."
+            actor="true">
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="fb2b882d-910c-441f-b968-4ab417dd0dae" targetElement="#34533924-f9dc-4682-9872-70f26b180450"
               sourceElement="#19d1575f-c25e-4bd8-b517-4f66a633e204"/>
@@ -1033,7 +1076,8 @@
               sourceElement="#1a259ec3-b9b8-46aa-a2e3-801029a7678f"/>
         </ownedSystemComponents>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="58aba4cd-3811-49b5-9358-9efa4715578e" name="Obstacle." actor="true">
+            id="58aba4cd-3811-49b5-9358-9efa4715578e" name="Obstacle" summary="Élément physique susceptible d’entraver le déplacement du drone ou de modifier la trajectoire de la mission."
+            actor="true">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="19e56842-3abb-45cb-a6a3-b3ad5cd9aa4d" targetElement="#bcf0a612-f5db-4416-93b3-966a7472a6a2"
               sourceElement="#58aba4cd-3811-49b5-9358-9efa4715578e"/>

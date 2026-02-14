@@ -12,7 +12,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']/@ownedRepresentations[name='Missions%20Capabilities%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.ctx:CapabilityPkg" href="mbse.capella#049571b3-f5b6-40dd-aa24-44bd10a8be12"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_z6F6gPsFEfCYzPjH69ot_Q" name="[SAB] Structure" repPath="#_z6BpEPsFEfCYzPjH69ot_Q" changeId="1770022028211">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_z6F6gPsFEfCYzPjH69ot_Q" name="[SAB] Structure" repPath="#_z6BpEPsFEfCYzPjH69ot_Q" changeId="1771081669702">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']/@ownedRepresentations[name='System%20Architecture%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.ctx:SystemComponentPkg" href="mbse.capella#1bf5170b-8fd9-4f6b-ad28-d5e0675e2c90"/>
       </ownedRepresentationDescriptors>
@@ -2255,7 +2255,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vKQDQgATEfGbNZrw9eTYjA"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_vKCA0QATEfGbNZrw9eTYjA" fontColor="3038217" fontName="Segoe UI" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vKCA0gATEfGbNZrw9eTYjA" x="65" y="34"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vKCA0gATEfGbNZrw9eTYjA" x="65" y="34" width="101" height="71"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_s245ggATEfGbNZrw9eTYjA"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_s245gwATEfGbNZrw9eTYjA"/>
@@ -3189,7 +3189,7 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']/@ownedRepresentations[name='System%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='System%20Actors']/@subNodeMappings[name='CA%20System%20Function']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_7nrRQPsFEfCYzPjH69ot_Q" name="étudiants et personnels">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_7nrRQPsFEfCYzPjH69ot_Q" name="Etudiants et personnels">
       <target xmi:type="org.polarsys.capella.core.data.cs:Part" href="mbse.capella#68d2b5b5-25ae-4f16-a9bb-f8ea6e088531"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="mbse.capella#68d2b5b5-25ae-4f16-a9bb-f8ea6e088531"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemComponent" href="mbse.capella#590f9592-450a-40ca-9d5b-70f0e892c769"/>
@@ -3610,7 +3610,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']/@ownedRepresentations[name='System%20Architecture%20Blank']/@defaultLayer/@edgeMappings[name='CA%20DataFlow%20between%20Function']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_s2dbsAATEfGbNZrw9eTYjA" name="Obstacle.">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_s2dbsAATEfGbNZrw9eTYjA" name="Obstacle">
       <target xmi:type="org.polarsys.capella.core.data.cs:Part" href="mbse.capella#668069f0-9924-4e85-8692-4f0f51697a25"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="mbse.capella#668069f0-9924-4e85-8692-4f0f51697a25"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemComponent" href="mbse.capella#58aba4cd-3811-49b5-9358-9efa4715578e"/>
