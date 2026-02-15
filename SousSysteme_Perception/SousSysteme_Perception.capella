@@ -1734,6 +1734,14 @@
             linkEnds="#c3bef77a-c3b4-4121-8251-142c18f85773 #67a86ad5-a636-4b1b-afd7-6c5802a1414f"/>
         <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
             id="5ed7257d-4b14-40c2-abfd-318ed14cbb0b" name="Bus CAN" linkEnds="#7fc3a2cf-07aa-4b1c-a842-be77de031435 #5447ab69-01ff-42d0-97ec-57a1b75480a5"/>
+        <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+            id="82f39c9f-9d08-4ad6-866b-d3a4f27b7cad" name="Ondes Sonores" linkEnds="#de6aa79b-477b-4304-b79b-952ada8017c9 #a486cfc1-bdf3-4ab2-a2c8-b620be326819"/>
+        <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+            id="8ebd8e24-a0ef-480c-bfef-9e1083765040" name="Lumière" linkEnds="#308a9e50-f658-400f-9d14-198e1488c801 #b03acee9-1701-464b-8d08-d625ecef0e40"/>
+        <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+            id="b1ff1429-42c6-4a05-b0d0-08cde87b261d" name="Lumière" linkEnds="#6ea814ac-4363-4290-8b07-7928cd3fca8a #b03acee9-1701-464b-8d08-d625ecef0e40"/>
+        <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+            id="865e53a4-1f7b-4284-a86d-e3fb1bb30339" name="Air/Ambiance" linkEnds="#eee2190c-370c-402a-861e-629e58eac651 #a9c8a6cb-88f9-4479-a171-d5a577a79324"/>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
             id="15c27ad3-2466-477c-a2c1-ae6b6ca089f0" name="Système de Perception Matériel">
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
@@ -1853,6 +1861,8 @@
               id="9feabbd0-3931-44d1-8197-4b263d529c26" name="Module Caméra Pi" nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="331d3370-ca96-4d80-90f3-c107fea75edf" name="PP 1"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="b03acee9-1701-464b-8d08-d625ecef0e40" name="PP 2"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="a4be3e0f-9b11-4943-bd4d-de4f1970da99" name="Carte Raspberry Pi"
@@ -1875,12 +1885,16 @@
               nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="591c2641-01c1-40cd-acc5-da57f23f6b83" name="PP 1"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="a486cfc1-bdf3-4ab2-a2c8-b620be326819" name="PP 2"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="07ce519c-78a4-4a23-9872-6f314cdd175c" name="Module Capteurs Météo"
               nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="7461fd7f-661b-446a-b738-c90acfee0e2f" name="PP 1"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="a9c8a6cb-88f9-4479-a171-d5a577a79324" name="PP 2"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="5e3a0895-4d74-4e96-ad57-bf4fb76ddc85" name="OS Linux / ROS" nature="BEHAVIOR">
@@ -2036,6 +2050,10 @@
                 id="9d015f0a-2ff8-4db5-8945-96c0c3b65dc4" targetElement="#abbc4fd0-f165-4884-bb06-b199dda9cf24"
                 sourceElement="#e60b857f-f234-4aa3-a93c-01b9d4577c51"/>
           </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+              id="de6aa79b-477b-4304-b79b-952ada8017c9" name="PP 3"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+              id="308a9e50-f658-400f-9d14-198e1488c801" name="PP 4"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="8348595f-cd81-4bdc-b0e0-716570bc04a1" targetElement="#49277d1e-12da-4b20-9dc5-8eb2358a0696"
               sourceElement="#4371a19d-cb10-4bfc-a9f1-eda4ee18ae6e"/>
@@ -2099,6 +2117,8 @@
                 id="2111a149-6ccb-469e-810f-d9d5e02c97b5" targetElement="#e20db1a4-6b14-48c2-ba66-d546c5e02f44"
                 sourceElement="#412b2281-b493-4a23-80dd-e8f1c3ad4043"/>
           </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+              id="eee2190c-370c-402a-861e-629e58eac651" name="PP 2"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="1558006d-080e-4236-9ea7-f8c6e8d0c8bd" targetElement="#be565129-3cd8-40d4-9066-667cc16ce5b3"
               sourceElement="#4f0521dd-d289-4d49-9fcc-3370830ce213"/>
@@ -2153,6 +2173,8 @@
                 id="d046cda5-4e2f-4ca4-92dc-c25224d75f69" targetElement="#43f31029-b366-46b4-97ef-3c20114399f2"
                 sourceElement="#cf0c7552-d752-431e-a843-4b9e40d177ab"/>
           </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+              id="6ea814ac-4363-4290-8b07-7928cd3fca8a" name="PP 2"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="3af14da9-eca0-4d1e-91d0-92ac2fcbf7c6" targetElement="#18a0d84b-676b-4508-8e39-bf1ab0705fcf"
               sourceElement="#63575dff-1171-48ad-98eb-676e5be2737d"/>
